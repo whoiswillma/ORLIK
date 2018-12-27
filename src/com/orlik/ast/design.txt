@@ -1,0 +1,25 @@
+Node
+    Declaration
+        Function
+        Variable
+
+    Expr
+        Function
+        Variable
+
+        Boolean Expr
+            Boolean Literal Expr
+            Boolean Operator
+            ...
+
+        Integer Expr
+            Integer Literal Expr
+            Integer Factor
+            Arithmetic Operator
+            ...
+
+
+    Statement
+        If Statement
+        Body
+        ...
