@@ -1,0 +1,49 @@
+   ____  _____  _      _____ _  __
+  / __ \|  __ \| |    |_   _| |/ /
+ | |  | | |__) | |      | | | ' /
+ | |  | |  _  /| |      | | |  <
+ | |__| | | \ \| |____ _| |_| . \
+  \____/|_|  \_\______|_____|_|\_\
+
+==========================
+          SYNTAX
+==========================
+
+Variables are defined as follows:
+    givemeanew <type> : <identifier> = <initial value>;
+
+Functions are defined as follows:
+    doitnow : <identifier>(<type> : <identifier> [, <type> : <identifier>]) {<code>}
+
+If statements are defined as follows:
+    anybodywantsome (<conditional>) {<code>}
+
+While loops are defined as follows:
+    bigo (<conditional>) {<code>}
+
+Identifiers: Must start with a letter, and is followed by letters, numbers, or underscores. Cannot be a keyword
+"givemeanew", "doitnow", etc.
+
+Note: Whitespace is ignored, capitalization matters
+
+===========================
+   (Old) EXAMPLE PROGRAM
+===========================
+
+do mainRunsTheProgram now(Int32 called candy){
+    anybodywantsome(candy){
+        print(airheads);
+    }
+}
+
+givemeanew Int32(3) called swearJar;
+givemeanew Int32(2) called money;
+givemeanew Int32(swearJar - money) called candy;
+print(swearJar, money, candy);
+mainRunsTheProgram(candy);
+
+this first creates a new Int32 called swearJar with the value of 3, a new Int32 called money with the
+value of 2. Then it creates an Int32 with the value of swearJar - money, or 1, called candy.
+then it calls the function mainRunsTheProgram with the parameter of candy.
+the if statement inside mainRunsTheProgram checks to see if candy is a 0. If it is, the programs prints
+"airheads"

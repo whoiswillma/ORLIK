@@ -32,4 +32,6 @@ public interface Visitor {
 
     void visit(Variable node);
 
+    void visit(Program node);
+
 }
