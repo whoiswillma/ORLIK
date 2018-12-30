@@ -4,26 +4,14 @@ import com.orlik.ast.visitor.Visitor;
 
 import java.util.List;
 
-public final class Function implements Declaration {
-
-    public static class Parameter {
-
-        private final Type type;
-        private final String identifier;
-
-        public Parameter(Type type, String identifier) {
-            this.type = type;
-            this.identifier = identifier;
-        }
-
-    }
+public final class FunctionDeclaration implements Declaration {
 
     private final String identifier;
     private final List<Parameter> parameters;
     private final Body body;
     private final Type returnType;
 
-    public Function(String identifier, List<Parameter> parameters, Body body, Type returnType) {
+    public FunctionDeclaration(String identifier, List<Parameter> parameters, Body body, Type returnType) {
         this.identifier = identifier;
         this.parameters = List.copyOf(parameters);
         this.body = body;

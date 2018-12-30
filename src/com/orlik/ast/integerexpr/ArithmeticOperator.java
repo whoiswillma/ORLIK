@@ -1,7 +1,6 @@
 package com.orlik.ast.integerexpr;
 
 import com.orlik.ast.Node;
-import com.orlik.ast.integerexpr.IntegerExpr;
 import com.orlik.ast.visitor.Visitor;
 
 import java.util.List;

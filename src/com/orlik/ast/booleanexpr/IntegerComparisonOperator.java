@@ -1,7 +1,8 @@
-package com.orlik.ast.integerexpr;
+package com.orlik.ast.booleanexpr;
 
 import com.orlik.ast.Node;
 import com.orlik.ast.booleanexpr.BooleanExpr;
+import com.orlik.ast.integerexpr.IntegerExpr;
 import com.orlik.ast.visitor.Visitor;
 
 import java.util.List;

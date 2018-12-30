@@ -12,6 +12,10 @@ public final class Program implements Node {
         this.body = body;
     }
 
+    public Body getBody() {
+        return body;
+    }
+
     @Override
     public List<Node> getChildren() {
         return List.of(body);
